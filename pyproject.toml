@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "octopus-net-nix"
+version = "0.1.0"
+description = "Declarative Octopus NET Pro tuner configuration"
+requires-python = ">=3.11"
+license = "GPL-3.0-only"
+
+[project.scripts]
+octopus-net-nix = "octopus_net:main"
+
+[tool.setuptools]
+py-modules = ["octopus_net"]
